@@ -1,6 +1,13 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+## 📱 Screenshots
+
+### App Interface
+
+![KothaKoli AI - Screen 1](KothaKoli-AI_001.png)
+![KothaKoli AI - Screen 2](KothaKoli-AI_002.png)
+![KothaKoli AI - Screen 3](KothaKoli-AI_003.png)
+![KothaKoli AI - Screen 4](KothaKoli-AI_004.png)
+![KothaKoli AI - Screen 5](KothaKoli-AI_005.png)
+
 
 # Run and deploy your AI Studio app
 

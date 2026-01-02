@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>কথাকলি AI KathaKoli</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --glow-color: hsl(217, 71%, 53%); /* blue-500 */
+        --glow-color-alt: hsl(271, 91%, 53%); /* purple-600 */
+        --accent-gradient: linear-gradient(90deg, #4A90E2 0%, #9013FE 100%);
+        --bg-dark: #0D0D0D;
+        --bg-medium: #1A1A1A;
+        --text-light: #E0E0E0;
+        --text-dark: #9E9E9E;
+        --border-color: rgba(255, 255, 255, 0.1);
+      }
+      body {
+        background-color: var(--bg-dark);
+        font-family: 'Roboto', sans-serif;
+        overflow: hidden; /* Prevent body scroll with new layout */
+      }
+      h1, h2, h3, h4, .font-orbitron {
+        font-family: 'Orbitron', sans-serif;
+      }
+      .text-glow {
+        text-shadow: 0 0 8px hsla(217, 71%, 53%, 0.5);
+      }
+      @keyframes pulse-glow {
+        0%, 100% { box-shadow: 0 0 5px var(--glow-color), 0 0 10px var(--glow-color); }
+        50% { box-shadow: 0 0 10px var(--glow-color), 0 0 20px var(--glow-color); }
+      }
+      @keyframes pulse-glow-alt {
+        0%, 100% { box-shadow: 0 0 5px var(--glow-color-alt), 0 0 10px var(--glow-color-alt); }
+        50% { box-shadow: 0 0 10px var(--glow-color-alt), 0 0 20px var(--glow-color-alt); }
+      }
+      @keyframes vibrant-glow {
+        0%, 100% { box-shadow: 0 0 15px 5px var(--glow-color), inset 0 0 10px 3px var(--glow-color); }
+        50% { box-shadow: 0 0 30px 8px var(--glow-color-alt), inset 0 0 16px 4px var(--glow-color-alt); }
+      }
+      @keyframes pulse-border {
+        0%, 100% { 
+          border-color: rgba(74, 144, 226, 0.5); 
+          box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
+        }
+        50% { 
+          border-color: rgba(144, 19, 254, 0.8); 
+          box-shadow: 0 0 8px rgba(144, 19, 254, 0.5);
+        }
+      }
+      .streaming-border-pulse {
+        animation: pulse-border 2s infinite ease-in-out;
+        border: 1px solid; /* Make sure border is applied */
+      }
+      .futuristic-glow {
+        animation: pulse-glow 2s infinite ease-in-out;
+      }
+       .animate-pulse-glow {
+        animation: pulse-glow 2s infinite ease-in-out;
+      }
+      .animate-pulse-glow-alt {
+        animation: pulse-glow-alt 2s infinite ease-in-out;
+      }
+      .animate-vibrant-glow {
+        animation: vibrant-glow 3s infinite ease-in-out;
+      }
+      .gradient-text {
+        background: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+      }
+      @keyframes wave-pulse {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      .wavy-background {
+        background: radial-gradient(circle at 20% 20%, hsla(217, 71%, 53%, 0.1) 0%, transparent 40%),
+                    radial-gradient(circle at 80% 70%, hsla(271, 91%, 53%, 0.1) 0%, transparent 40%),
+                    var(--bg-medium);
+        background-size: 200% 200%;
+        animation: wave-pulse 15s ease-in-out infinite;
+      }
+    </style>
+    <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@18.2.0/",
+    "react": "https://aistudiocdn.com/react@18.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@18.2.0/",
+    "react-dom": "https://aistudiocdn.com/react-dom@18.2.0",
+    "react-dom/client": "https://aistudiocdn.com/react-dom@18.2.0/client",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@1.29.1"
+  }
+}
+</script>
+</head>
+  <body class="text-[var(--text-light)]">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

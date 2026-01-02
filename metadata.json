@@ -1,0 +1,8 @@
+{
+  "name": "কথাকলি এ।আই KathaKoli",
+  "description": "An advanced AI suite for creative exploration. Engage in live conversations, generate ideas, create stunning images and videos, and more. KathaKoli means 'Story Arts' or 'Conversation Flow'.",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation"
+  ]
+}
